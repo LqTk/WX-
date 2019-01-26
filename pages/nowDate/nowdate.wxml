@@ -1,0 +1,4 @@
+<!--pages/nowDate/nowdate.wxml-->
+<view class='container'>
+  <text style='center'>{{time}}</text>
+</view>

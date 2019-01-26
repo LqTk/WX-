@@ -1,0 +1,6 @@
+<!--pages/scan/scan.wxml-->
+<view class='container'>
+  <button type='primary' bindtap='startScan'>扫描</button>
+  <text style='margin-top:40rpx'>扫描结果：{{qRcodeMsg}}</text>
+  <button type='primary' bindtap='toCamera'>摄像头</button>
+</view>

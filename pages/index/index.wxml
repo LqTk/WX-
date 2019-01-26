@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <button type='primary' style='margin-bottom:40rpx;' bindtap='startSetInter'>开始</button>
+  <button type='primary' bindtap='endSetInter'>结束</button>
+  <text style='margin-top:10rpx'>计数：{{num}}</text>
+  <button type='primary'style='margin-top:20rpx' bindtap='seeNowDate'>查看当前时间</button>
+  <button type='primary' style='margin-top:10rpx' bindtap='startScan'>扫描条码</button>
+</view>
