@@ -4,12 +4,14 @@
     "pages/logs/logs",
     "pages/nowDate/nowdate",
     "pages/scan/scan",
-    "pages/camera/camera"
+    "pages/camera/camera",
+    "pages/shopping/shopping",
+    "pages/shoppingDetail/shoppingDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "定时器和时间",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "black"
   }
 }

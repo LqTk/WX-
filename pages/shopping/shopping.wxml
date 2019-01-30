@@ -1,0 +1,20 @@
+<!--pages/shoping/shopping.wxml-->
+<view class='list'>
+  <block wx:for='{{dataListRes}}' wx:key='list' wx:for-item='item'>
+    <view class='list_item'>
+      <!-- <view class='view_dis' bindtap='toDetail' data-id='{{item.id}}' data-latitude='{{item.latitude}}' data-longigude='{{item.longitude}}' data-logo='{{item.logo}}' data-mapId='{{item.mapId}}' data-name='{{item.name}}'> JS跳转方式-->
+      <navigator url='../shoppingDetail/shoppingDetail?id={{item.id}}&latitude={{item.latitude}}&logo={{item.logo}}&longitude=item.longitude&mapId={{item.mapId}}&name={{item.name}}'><!--标签跳转-->
+        <view class='img'>
+          <image src="https://xz.parkbobo.com{{item.logo}}" mode="scaleToFill"></image>
+        </view>
+        <view class='info'>
+          <view class='title'>{{item.name}}</view>
+          <view class='price'>mapID={{item.mapId}}</view>
+          <view class='num'>id={{item.id}}</view>
+        </view>
+      <!-- </view> JS跳转方式-->
+      </navigator>
+      <view class='clear'></view>
+    </view>
+  </block>
+</view>

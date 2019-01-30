@@ -1,4 +1,5 @@
 <!--pages/nowDate/nowdate.wxml-->
 <view class='container'>
   <text style='center'>{{time}}</text>
+  <button type='primary' bindtap='seeShopping'>查看商品</button>
 </view>

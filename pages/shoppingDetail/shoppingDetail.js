@@ -1,44 +1,50 @@
-// pages/nowDate/nowdate.js
-var utils = require('../../utils/util.js')
+// pages/shoppingDetail/shoppingDetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    time:'',
+    id: '',
+    latitude: '',
+    logo: '',
+    longitude: '',
+    mapId: '',
+    name: ''
   },
 
-  getNowDate: function () {
-    var that = this;
-    setInterval(function () {
-      that.setData({ time: utils.getDate()});
-
-    }, 1000);
-  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this;
-    wx.setNavigationBarTitle({
-      title: '当前时间',
-    })
-      that.getNowDate();
+
+    if (options != null) {
+      this.setData({
+        id: options.id,
+        latitude: options.latitude,
+        longitude: options.longitude,
+        logo: options.logo,
+        mapId: options.mapId,
+        name: options.name
+      })
+      console.log(this.data.name + "商品详情")
+    }
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    wx.setNavigationBarTitle({
+      title: '商品详情',
+    })
   },
 
   /**
@@ -74,10 +80,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  seeShopping:function(){
-    wx.navigateTo({
-      url: '../shopping/shopping',
-    })
   }
 })

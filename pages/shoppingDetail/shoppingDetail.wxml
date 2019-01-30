@@ -1,0 +1,14 @@
+<!--pages/shoppingDetail/shoppingDetail.wxml-->
+<view class='list_item'>
+  <view class='view_dis'>
+    <view class='img'>
+      <image src="https://xz.parkbobo.com{{logo}}" mode="scaleToFill"></image>
+    </view>
+    <view class='info'>
+      <view class='title'>{{name}}</view>
+      <view class='price'>mapID={{mapId}}</view>
+      <view class='num'>id={{id}}</view>
+    </view>
+  </view>
+  <view class='clear'></view>
+</view>
